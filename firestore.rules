@@ -1,0 +1,39 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isValidString(val, maxLen) {
+      return val is string && val.size() <= maxLen;
+    }
+
+    function isValidAppointment(data) {
+      return data.keys().hasAll(['service', 'date', 'time', 'firstName', 'lastName', 'phone', 'email', 'status', 'createdAt']) &&
+        data.keys().size() <= 10 &&
+        isValidString(data.service, 100) &&
+        isValidString(data.date, 50) &&
+        isValidString(data.time, 50) &&
+        isValidString(data.firstName, 100) &&
+        isValidString(data.lastName, 100) &&
+        isValidString(data.phone, 50) &&
+        isValidString(data.email, 150) &&
+        isValidString(data.status, 20) &&
+        data.status in ['pending', 'confirmed', 'cancelled'] &&
+        (data.notes == null || isValidString(data.notes, 1000));
+    }
+
+    match /appointments/{appointmentId} {
+      // Anyone can create an appointment
+      allow create: if isValidAppointment(request.resource.data) && 
+                       request.resource.data.createdAt == request.time &&
+                       request.resource.data.status == 'pending';
+                       
+      // Let's assume there is an admin collection for owner read access,
+      // but without auth fully set, we can just deny read/update/delete for the public
+      // and only let admin read/update. Since we don't have auth properly setup,
+      // we'll leave it restricted. Real admin will access via Firebase Console directly for now.
+    }
+  }
+}

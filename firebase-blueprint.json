@@ -1,0 +1,54 @@
+{
+  "entities": {
+    "Appointment": {
+      "title": "Appointment",
+      "description": "A booking request from a patient",
+      "type": "object",
+      "properties": {
+        "service": {
+          "type": "string",
+          "description": "Selected service"
+        },
+        "date": {
+          "type": "string",
+          "description": "Date of appointment in ISO format"
+        },
+        "time": {
+          "type": "string",
+          "description": "Time of appointment"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "confirmed", "cancelled"],
+          "description": "Status of the appointment"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["service", "date", "time", "firstName", "lastName", "phone", "email", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/appointments/{appointmentId}": {
+      "schema": "Appointment",
+      "description": "Appointments collection"
+    }
+  }
+}
