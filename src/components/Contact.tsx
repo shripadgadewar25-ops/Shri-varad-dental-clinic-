@@ -15,7 +15,7 @@ export default function Contact() {
     const { firstName, lastName, phone, message } = formData;
     const text = `*Patient*\n\n*Name:* ${firstName} ${lastName}\n*Phone:* ${phone}\n*Problem/Concern:* ${message}`;
     const encodedText = encodeURIComponent(text);
-    window.open(`https://wa.me/917499641082?text=${encodedText}`, '_blank');
+    window.open(`https://wa.me/919422187060?text=${encodedText}`, '_blank');
   };
   return (
     <section id="contact" className="py-24 bg-white relative">
@@ -38,7 +38,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Call Us</h4>
-                  <p className="text-gray-600">+91 7499641082</p>
+                  <p className="text-gray-600">+91 94221 87060</p>
                   <p className="text-sm text-gray-500">Mon-Sat: 10:00 AM - 9:00 PM</p>
                 </div>
               </div>

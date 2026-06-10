@@ -8,9 +8,9 @@ const treatments = [
     image: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   },
   {
-    title: 'Dental Implants',
-    desc: 'The most natural-looking and durable solution for missing teeth restoration.',
-    image: 'https://images.unsplash.com/photo-1598256989800-fea5a03d7c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+    title: 'Teeth Reshaping',
+    desc: 'Sculpt your perfect smile by precisely altering the length, shape, or surface of your teeth.',
+    image: 'https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
   },
   {
     title: 'Smile Designing',
