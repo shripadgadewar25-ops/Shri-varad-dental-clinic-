@@ -29,10 +29,10 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-cyan-400 flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                SV
+                ID
               </div>
               <span className={`font-display font-bold text-xl ${scrolled ? 'text-gray-900' : 'text-gray-900'} hidden sm:block`}>
-                Shri Varad Clinic & Dental Studio
+                I Dent Dental Clinic & Implant Center
               </span>
             </a>
           </div>

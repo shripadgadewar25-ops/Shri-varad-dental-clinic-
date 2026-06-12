@@ -41,7 +41,7 @@ export default function About() {
             <h2 className="text-brand-600 font-semibold tracking-wide uppercase text-sm mb-3">About The Clinic</h2>
             <h3 className="text-4xl font-bold text-gray-900 mb-6">Redefining Dental Care Experience</h3>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              At Shri Varad Clinic & Dental Studio, we believe that a healthy smile is the foundation of well-being. Our clinic merges premium aesthetics with highly advanced medical technology to provide a soothing, anxiety-free environment.
+              At I Dent Dental Clinic & Implant Center, we believe that a healthy smile is the foundation of well-being. Our clinic merges premium aesthetics with highly advanced medical technology to provide a soothing, anxiety-free environment.
             </p>
 
             <div className="space-y-6">

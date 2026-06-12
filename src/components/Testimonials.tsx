@@ -11,7 +11,7 @@ const reviews = [
   {
     name: 'Rahul Verma',
     date: '3 weeks ago',
-    text: 'I was always scared of dentists until I visited Shri Varad Clinic & Dental Studio. The technology they use is amazing, and everything was explained to me clearly. Got my teeth whitened and I love my new smile!',
+    text: 'I was always scared of dentists until I visited I Dent Dental Clinic & Implant Center. The technology they use is amazing, and everything was explained to me clearly. Got my teeth whitened and I love my new smile!',
     rating: 5
   },
   {

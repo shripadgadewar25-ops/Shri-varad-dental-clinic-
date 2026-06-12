@@ -8,10 +8,10 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-6">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-cyan-400 flex items-center justify-center text-white font-bold">
-                SV
+                ID
               </div>
               <span className="font-display font-bold text-xl text-white">
-                Shri Varad Clinic & Dental Studio
+                I Dent Dental Clinic & Implant Center
               </span>
             </div>
             <p className="text-sm text-gray-400 mb-6">
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Shri Varad Clinic & Dental Studio. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} I Dent Dental Clinic & Implant Center. All rights reserved.</p>
         </div>
       </div>
     </footer>

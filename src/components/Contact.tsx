@@ -15,7 +15,7 @@ export default function Contact() {
     const { firstName, lastName, phone, message } = formData;
     const text = `*Patient*\n\n*Name:* ${firstName} ${lastName}\n*Phone:* ${phone}\n*Problem/Concern:* ${message}`;
     const encodedText = encodeURIComponent(text);
-    window.open(`https://wa.me/919422187060?text=${encodedText}`, '_blank');
+    window.open(`https://wa.me/919653442772?text=${encodedText}`, '_blank');
   };
   return (
     <section id="contact" className="py-24 bg-white relative">
@@ -38,7 +38,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Call Us</h4>
-                  <p className="text-gray-600">+91 94221 87060</p>
+                  <p className="text-gray-600">+91 96534 42772</p>
                   <p className="text-sm text-gray-500">Mon-Sat: 10:00 AM - 9:00 PM</p>
                 </div>
               </div>
@@ -49,7 +49,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Email</h4>
-                  <p className="text-gray-600">hello@shrivaradstudio.com</p>
+                  <p className="text-gray-600">hello@identdental.com</p>
                 </div>
               </div>
 
@@ -59,8 +59,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900">Location</h4>
-                  <a href="https://maps.app.goo.gl/x87XAcUW3RZK3uGw6?g_st=ac" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-brand-600 transition-colors inline-block">
-                    Shri Varad Clinic & Dental Studio,<br/>Nanded
+                  <a href="https://maps.app.goo.gl/HnEbm8cQwGDNu2a76?g_st=ac" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-brand-600 transition-colors inline-block">
+                    I Dent Dental Clinic & Implant Center
                   </a>
                 </div>
               </div>

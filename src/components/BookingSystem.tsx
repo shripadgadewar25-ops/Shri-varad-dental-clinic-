@@ -66,7 +66,7 @@ export default function BookingSystem() {
     
     const text = `*Patient*\n\n*Name:* ${firstName} ${lastName}\n*Phone:* ${phone}\n*Service:* ${service}\n*Preferred Date:* ${dateStr}\n*Problem/Concern:* ${notes || 'None'}`;
     const encodedText = encodeURIComponent(text);
-    window.open(`https://wa.me/919422187060?text=${encodedText}`, '_blank');
+    window.open(`https://wa.me/919653442772?text=${encodedText}`, '_blank');
   };
 
   return (
